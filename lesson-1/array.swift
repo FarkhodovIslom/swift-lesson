@@ -3,6 +3,7 @@ var weapons: [String] = ["Katana", "Kunai", "Dick"]
 weapons.append("Kusarigama")
 weapons.insert("Shuriken",at: 2)
 
+let sortedWeapons = weapons.sorted()
 
 var swiftText = """
             __,
@@ -13,8 +14,6 @@ var swiftText = """
                     (/
 """
 
-print(swiftText)
-
-for item in weapons {
-    print(item)
+sortedWeapons.forEach { Weapon in
+    print(Weapon)    
 }
